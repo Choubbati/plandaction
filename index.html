@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title></title>
+ 
 </head>
 <body>
-    
+  <h1>Ajouter une personne</h1>
 
+  <form id="personForm">
+    <label>
+      Nom : <br>
+      <input type="text" id="nameInput" required>
+    </label> <br>
+    <label>
+      Âge : <br>
+      <input type="number" id="ageInput" min="0" required>
+    </label> <br>
+    <button type="submit" id="btn">Ajouter</button>
+  </form>
 
+  <div id="personList"></div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
